@@ -24,7 +24,7 @@ roslaunch a3_code main_launcher.launch
 
 ## General scheme and functionality
 ![alt text](flow_chart_RT1_A3.jpg)
-Following the above general scheme:
+Following the above general scheme:  
 **user_controller** provide a simple interface for the user and, following the user directive, call the specific node to handle one of the three possible actions.
 For communicate with the handler the node uses two different service, the first one is **Coordinate.srv** and it allows to communicate and with **case1 node** that is the handler for the autonomous point reaching. And then using an action communicate with **move_base** a predefined package that provide an autonomous reaching point routine.
 The second service used by '**user_controller**' is **Keyboard_type.srv**, this service allows the user to communicate whether they what to choose option 2 or 3 from the user interface menu.
