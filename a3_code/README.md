@@ -11,6 +11,7 @@ All the code is developed using ROS environment and in python language.
 
  
 ## How to run the code
+Remember to check if the .py file are executable.  
 From a linux shell launch as first the environment and the mapping nodes: 
 ```
 roslaunch final_assignment simulation_gmapping.launch
